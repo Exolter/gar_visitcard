@@ -1,0 +1,27 @@
+name: Deploy to Hosting
+
+on:
+  push:
+    branches:
+      - main # замените на вашу основную ветку
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Deploy to Hosting via API
+        env:
+          API_TOKEN: ${{ secrets.API_TOKEN }}
+        run: |
+          # Здесь выполните запрос к API вашего хостинга для обновления кода
+          curl -X POST https://your-hosting-api.com/deploy \
+          -H "Authorization: Bearer $API_TOKEN" \
+          -H "Content-Type: application/json" \
+          -d '{
+                "repository": "https://github.com/Exolter/gar_visitcard",
+                "branch": "main"
+              }'
