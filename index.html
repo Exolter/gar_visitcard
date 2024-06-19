@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAR Company</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>GAR</h1>
+        <h2>COMPANY</h2>
+      </div>
+      <div class="logos">
+        <img
+          src="google-ads-logo.png"
+          alt="Google Ads"
+          onclick="openModal('googleModal')"
+        />
+        <img src="meta-logo.png" alt="Meta" onclick="openModal('metaModal')" />
+        <img
+          src="telegram-logo.png"
+          alt="Telegram"
+          onclick="openModal('telegramModal')"
+        />
+      </div>
+      <div class="contacts">
+        <h3>Контакти</h3>
+        <p>
+          Телеграм
+          <a href="https://t.me/exolt_zarj" target="_blank">@exolt_zarj</a>
+        </p>
+        <p>
+          <a href="mailto:garkusha.company@gmail.com"
+            >garkusha.company@gmail.com</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <!-- Google Modal -->
+    <div id="googleModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('googleModal')">&times;</span>
+        <div class="modal-header">
+          <img src="google-ads-logo.png" alt="Google Ads" />
+          <h4>Google Ads</h4>
+        </div>
+        <p>
+          Досягайте нових висот з нашим професійним налаштуванням рекламних
+          акаунтів Google Ads!
+        </p>
+        <ul>
+          <li>Створення ефективних рекламних кампаній.</li>
+          <li>Залучення цільових клієнтів і збільшення продажів.</li>
+          <li>Максимальна віддача від вашого рекламного бюджету.</li>
+        </ul>
+        <p>
+          <strong>План на 6 місяців:</strong>
+        </p>
+        <ul>
+          <li>
+            <strong>Місяць 1-2:</strong> Аналіз ринку та конкурентів, створення
+            стратегії реклами, налаштування рекламних акаунтів.
+          </li>
+          <li>
+            <strong>Місяць 3-4:</strong> Запуск рекламних кампаній, A/B
+            тестування оголошень, оптимізація ключових слів та ставок.
+          </li>
+          <li>
+            <strong>Місяць 5-6:</strong> Збір та аналіз даних, коригування
+            стратегії для підвищення ефективності, звітність та рекомендації для
+            подальшого розвитку.
+          </li>
+        </ul>
+        <p>Ціна: 5000₴/місяць.</p>
+      </div>
+    </div>
+
+    <!-- Meta Modal -->
+    <div id="metaModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('metaModal')">&times;</span>
+        <div class="modal-header">
+          <img src="meta-logo.png" alt="Meta" />
+          <h4>Meta</h4>
+        </div>
+        <p>
+          Розширюйте ваш бізнес з нашим налаштуванням рекламних акаунтів на Meta
+          (Facebook & Instagram)!
+        </p>
+        <ul>
+          <li>
+            Створення та оптимізація кампаній для досягнення потрібної
+            аудиторії.
+          </li>
+          <li>Підвищення залученості та продажів.</li>
+          <li>Чудові результати при управлінні рекламою.</li>
+        </ul>
+        <p>
+          <strong>План на 6 місяців:</strong>
+        </p>
+        <ul>
+          <li>
+            <strong>Місяць 1-2:</strong> Аналіз аудиторії та конкурентів,
+            розробка стратегії, налаштування рекламних акаунтів.
+          </li>
+          <li>
+            <strong>Місяць 3-4:</strong> Запуск рекламних кампаній, A/B
+            тестування контенту, оптимізація аудиторії та бюджету.
+          </li>
+          <li>
+            <strong>Місяць 5-6:</strong> Збір та аналіз результатів,
+            вдосконалення стратегії для підвищення конверсій, детальна звітність
+            та рекомендації для подальших дій.
+          </li>
+        </ul>
+        <p>Ціна: 5000₴/місяць.</p>
+      </div>
+    </div>
+
+    <!-- Telegram Modal -->
+    <div id="telegramModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('telegramModal')">&times;</span>
+        <div class="modal-header">
+          <img src="telegram-logo.png" alt="Telegram" />
+          <h4>Telegram</h4>
+        </div>
+        <p>Наш телеграм-бот надає такі можливості:</p>
+        <ul>
+          <li>Копіювання сайтів за URL.</li>
+          <li>Коригування коду цих сайтів під завдання дропшипперів.</li>
+          <li>
+            Відправка готового для роботи сайту в .zip архіві для скачування.
+          </li>
+          <li>
+            Всі отримані заявки на сайті будуть відправлені тому, хто його
+            копіював - у діалозі.
+          </li>
+        </ul>
+        <p>Перші 7 днів використання БЕЗКОШТОВНО.</p>
+        <p>Після безкоштовного періоду - вартість підписки 5$/місяць.</p>
+        <p>
+          Перейти до бота
+          <a href="https://t.me/gar_recall_bot" target="_blank"
+            >@gar_recall_bot</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
